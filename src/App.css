@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+
 :root {
   --grey: #858694;
   --dark: #333;
@@ -9,16 +11,16 @@
 * {
   padding: 0;
   margin: 0;
+  font-family: 'Balsamiq Sans', cursive, sans-serif;
   font-weight: 500;
 }
 
 .calc-app {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  padding: 1rem;
   max-width: 500px;
-  margin: auto;
-  margin-top: 10rem;
+  margin-top: 3rem;
+  height: 24rem;
 }
 
 .calc-result {
@@ -50,4 +52,117 @@ button:hover {
 
 .zero {
   grid-column: span 2;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 0 6px rgb(0 0 0 / 20%);
+  padding: 0.8rem;
+}
+
+h2 {
+  color: #696a74;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  gap: 0.5rem;
+}
+
+li {
+  border-left: 1px solid var(--dark);
+  padding-left: 0.5rem;
+}
+
+.nav-list > :first-child {
+  border: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--dark);
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.active {
+  border-bottom: 1px solid var(--dark);
+  color: red;
+}
+
+main {
+  padding: 1rem;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #ff4500;
+  margin: 2rem 0;
+}
+
+.home p {
+  padding-bottom: 2rem;
+}
+
+.quotes {
+  margin-top: 2rem;
+}
+
+.quote {
+  font-style: italic;
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar {
+    padding: 1rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  .nav-list {
+    gap: 1rem;
+  }
+
+  li {
+    padding-left: 1rem;
+  }
+
+  a {
+    font-size: 1.2rem;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .home p {
+    font-size: 1.2rem;
+    padding: 0 1rem 2rem;
+  }
+
+  .calc-app {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 550px;
+    margin-top: 3rem;
+    height: 24rem;
+    align-self: flex-end;
+    width: 100%;
+    padding: 0 5rem;
+  }
+
+  .quote {
+    font-size: 1.2rem;
+    padding: 2rem;
+  }
 }
