@@ -1,9 +1,9 @@
 import React from 'react';
 
 const Home = () => {
-  const text1 = 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad accusamus illum molestiae, non reiciendis velit tempore aperiam eius cumque quidem doloremque, corrupti nobis ipsam a consequuntur. Sapiente, sequi impedit harum fugit eius veritatis illum autem libero fuga doloremque eum doloribus est hic in. Enim natus expedita inventore temporibus a commodi.';
+  const text1 = 'Math magicians calculator web application is a convenient tool for performing mathematical calculations. It eliminates the need for a physical calculator, making it accessible from any device with internet access. With this web application, you can perform basic calculations such as addition, subtraction, multiplication, and division as well as more advanced calculations like trigonometry, logarithms, and more.';
 
-  const text2 = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic nulla numquam excepturi non, esse quod, pariatur minima inventore asperiores maiores reprehenderit doloribus sapiente sequi ullam perferendis vitae quos nostrum quisquam praesentium incidunt cum velit tempora natus. Ipsam, quos? Laudantium et exercitationem sequi. Quibusdam illum vero quaerat obcaecati asperiores. Tempora, pariatur?';
+  const text2 = 'One of the most appealing features of this web application is its ability to save and retrieve calculations. This means you can save a calculation and refer to it later, or even share it with others. This feature is especially useful for students, professionals, and anyone who needs to keep track of their calculations for later reference.';
 
   return (
     <section className="home">
