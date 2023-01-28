@@ -101,8 +101,6 @@ This project can be used to practice Webpack and Leaderboard API.
 <!-- FUTURE FEATURES -->
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Refactor with hooks]**
-- [ ] **[Full website]**
 - [ ] **[Tests & Deploy]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
