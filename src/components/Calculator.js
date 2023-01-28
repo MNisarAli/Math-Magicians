@@ -16,27 +16,30 @@ export default function Calculator() {
 
   const { total, operation, next } = state;
   return (
-    <section className="calc-app">
-      <input className="calc-result" type="text" value={`${total || ''} ${operation || ''} ${next || ''}`} />
-      <button type="button" onClick={newOperation}>AC</button>
-      <button type="button" onClick={newOperation}>+/-</button>
-      <button type="button" onClick={newOperation}>%</button>
-      <button type="button" className="operator" onClick={newOperation}>÷</button>
-      <button type="button" onClick={newOperation}>7</button>
-      <button type="button" onClick={newOperation}>8</button>
-      <button type="button" onClick={newOperation}>9</button>
-      <button type="button" className="operator" onClick={newOperation}>x</button>
-      <button type="button" onClick={newOperation}>4</button>
-      <button type="button" onClick={newOperation}>5</button>
-      <button type="button" onClick={newOperation}>6</button>
-      <button type="button" className="operator" onClick={newOperation}>-</button>
-      <button type="button" onClick={newOperation}>1</button>
-      <button type="button" onClick={newOperation}>2</button>
-      <button type="button" onClick={newOperation}>3</button>
-      <button type="button" className="operator" onClick={newOperation}>+</button>
-      <button type="button" className="zero" onClick={newOperation}>0</button>
-      <button type="button" onClick={newOperation}>.</button>
-      <button type="button" className="operator" onClick={newOperation}>=</button>
-    </section>
+    <>
+      <h1>Let&apos;s do some math!</h1>
+      <section className="calc-app">
+        <input className="calc-result" type="text" value={`${total || ''} ${operation || ''} ${next || ''}`} />
+        <button type="button" onClick={newOperation}>AC</button>
+        <button type="button" onClick={newOperation}>+/-</button>
+        <button type="button" onClick={newOperation}>%</button>
+        <button type="button" className="operator" onClick={newOperation}>÷</button>
+        <button type="button" onClick={newOperation}>7</button>
+        <button type="button" onClick={newOperation}>8</button>
+        <button type="button" onClick={newOperation}>9</button>
+        <button type="button" className="operator" onClick={newOperation}>x</button>
+        <button type="button" onClick={newOperation}>4</button>
+        <button type="button" onClick={newOperation}>5</button>
+        <button type="button" onClick={newOperation}>6</button>
+        <button type="button" className="operator" onClick={newOperation}>-</button>
+        <button type="button" onClick={newOperation}>1</button>
+        <button type="button" onClick={newOperation}>2</button>
+        <button type="button" onClick={newOperation}>3</button>
+        <button type="button" className="operator" onClick={newOperation}>+</button>
+        <button type="button" className="zero" onClick={newOperation}>0</button>
+        <button type="button" onClick={newOperation}>.</button>
+        <button type="button" className="operator" onClick={newOperation}>=</button>
+      </section>
+    </>
   );
 }
