@@ -1,7 +1,16 @@
+<a name="readme-top"></a>
+
+<div align="center">
+  <img src="./public/favicon.ico" alt="logo" width="140"  height="auto" />
+  <br/>
+  <h1><b>Math-Magicians</b></h1>
+</div>
+
+
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#-table-of-contents)
-- [📖 Math-Magicians ](#-math-magicians-)
+- [📚🔢💯 Math-Magicians ](#-math-magicians-)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
@@ -9,17 +18,21 @@
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
+    - [Install](#install)
+    - [Start](#start)
+    - [Build](#build)
+    - [Deployment](#deployment)
     - [Usage](#usage)
   - [👥 Authors ](#-authors-)
   - [🔭 Future Features ](#-future-features-)
   - [🤝 Contributing ](#-contributing-)
-  - [⭐️ Show your support ](#️-show-your-support-)
+  - [💖 Show your support ](#-show-your-support-)
   - [🙏 Acknowledgments ](#-acknowledgments-)
   - [📝 License ](#-license-)
 
 
 <!-- PROJECT DESCRIPTION -->
-# 📖 Math-Magicians <a name="about-project"></a>
+# 📚🔢💯 Math-Magicians <a name="about-project"></a>
 
  "Math magicians" is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to:
 
@@ -51,7 +64,7 @@ The key features of this website include.
 <!-- LIVE DEMO -->
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](#-live-demo-)
+- [Live Demo Link](https://mathmagicians-cicw.onrender.com/)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -64,20 +77,61 @@ The key features of this website include.
 
 ### Prerequisites
 
-In order to run this project you need to install npm and node.js
+In order to run this project you need:
+
+- [ ] A web browser like Google Chrome.
+- [ ] A code editor like Visual Studio Code with Git and Node.js installed.
 
 ### Setup
 
 Clone this repository to your desired folder:
-1. Use VScode: open terminal in VScode
+1. Open terminal in VScode.
 2. Navigate to the directory where you want clone the copy of this repository
 3. Create new directory [optional]
 4. Clone the repo using the below command
- > git clone  https://github.com/MNisarAli/Math-Magicians.git
+
+```sh
+  git clone  https://github.com/MNisarAli/Math-Magicians.git
+
+  cd Math-Magicians
+```
+
+### Install
+
+Install this project with:
+
+```sh
+  npm install
+```
+
+### Start
+
+To start the application, run the following command
+
+```sh
+  npm start
+```
+
+### Build
+
+To build the app for production, run the following command:
+
+```sh
+  npm run build
+```
+
+### Deployment
+
+To deploy project, run the following command:
+
+```
+  npm run deploy
+```
+Or you can deploy on a static site hosting platform like [Render](https://render.com/).
 
 ### Usage
 
-This project can be used to practice Webpack and Leaderboard API.
+This project can be used to practice React.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -86,12 +140,12 @@ This project can be used to practice Webpack and Leaderboard API.
 <!-- AUTHORS -->
 ## 👥 Authors <a name="authors"></a>
 
- The collaborator of this project.
+The collaborator of this project.
 
 👤 **M Nisar Ali**
 
 - GitHub: [@MNisarAli](https://github.com/MNisarAli)
-- Twitter: [@drnisar_ali](https://twitter.com/drnisar_ali)
+- Gmail: [Muhammad Nisar Ali](mailto:dr.nisaralig@gmail.com)
 - LinkedIn: [Muhammad Nisar Ali](https://linkedin.com/in/muhammad-nisar-ali-45a865251)
 
 
@@ -101,7 +155,7 @@ This project can be used to practice Webpack and Leaderboard API.
 <!-- FUTURE FEATURES -->
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Tests & Deploy]**
+- [ ] **Unit Tests**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -118,9 +172,9 @@ Feel free to check the [issues page](https://github.com/MNisarAli/Math-Magicians
 
 
 <!-- SUPPORT -->
-## ⭐️ Show your support <a name="support"></a>
+## 💖 Show your support <a name="support"></a>
 
-Give a ⭐️ if you like this project!
+Give a ⭐️, if you like this project!
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -129,9 +183,8 @@ Give a ⭐️ if you like this project!
 <!-- ACKNOWLEDGEMENTS -->
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
- I would like to thank:
-- [Microverseinc](https://github.com/microverseinc) for.
-  - [Readme-template](https://github.com/microverseinc/readme-template)
+I would like to thank:
+- [Microverseinc](https://github.com/microverseinc) for [Readme-template](https://github.com/microverseinc/readme-template).
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
