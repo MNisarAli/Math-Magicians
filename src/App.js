@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react';
 import { Routes, Route } from 'react-router-dom';
-import Calculator from './components/Calculator';
-import Navbar from './components/pages/Navbar';
+import Calculator from './components/pages/Calculator';
+import Navbar from './components/Navbar';
 import Home from './components/pages/Home';
 import Quotes from './components/pages/Quotes';
 import './App.css';
