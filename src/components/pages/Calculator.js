@@ -19,7 +19,7 @@ const Calculator = () => {
     <>
       <h1>Let&apos;s do some math!</h1>
       <section className="calc-app">
-        <input className="calc-result" type="text" value={`${total || ''} ${operation || ''} ${next || ''}`} />
+        <input className="calc-result" type="text" value={`${total || ''} ${operation || ''} ${next || ''}`.trim()} />
         <button type="button" onClick={newOperation}>AC</button>
         <button type="button" onClick={newOperation}>+/-</button>
         <button type="button" onClick={newOperation}>%</button>
