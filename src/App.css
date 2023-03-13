@@ -217,6 +217,23 @@ h1 {
     padding: 0;
   }
 
+  .menu_item::after {
+    bottom: -2px;
+    content: "";
+    display: block;
+    height: 1.5px;
+    left: 50%;
+    position: absolute;
+    background: var(--dark);
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+
+  .menu_item:hover::after {
+    width: 100%;
+    left: 0;
+  }
+
   main {
     display: flex;
     flex-direction: column;
