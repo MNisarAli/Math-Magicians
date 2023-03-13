@@ -173,10 +173,16 @@ h1 {
 }
 
 .quote {
-  font-style: italic;
   font-size: 1rem;
+  padding: 1rem 0.5rem;
 }
 
+.author {
+  font-style: italic;
+  font-weight: 600;
+  color: var(--dark);
+  font-family: sans-serif;
+}
 
 /* Media Queries for Screens > 768px */
 
@@ -257,6 +263,6 @@ h1 {
 
   .quote {
     font-size: 1.2rem;
-    padding: 2rem;
+    padding: 1rem;
   }
 }
