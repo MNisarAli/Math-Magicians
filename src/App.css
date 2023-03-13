@@ -2,10 +2,11 @@
 
 :root {
   --grey: #858694;
-  --dark: #333;
+  --dark: #3a3a47;
   --orange: #f5913e;
   --primary: #d0d0d0;
   --light: #e0e0e0;
+  --red: #ff4500;
 }
 
 * {
@@ -54,47 +55,104 @@ button:hover {
   grid-column: span 2;
 }
 
+/* Header with NavBar  */
+
 .navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   box-shadow: 0 0 6px rgb(0 0 0 / 20%);
   padding: 0.8rem;
 }
 
 h2 {
-  color: #696a74;
-  font-size: 1.5rem;
+  color: var(--dark);
+  font-size: 1.8rem;
   font-weight: 700;
 }
 
-.nav-list {
-  display: flex;
-  list-style: none;
-  gap: 0.5rem;
+.menu_box li {
+  padding-left: 1rem;
 }
 
-li {
-  border-left: 1px solid var(--dark);
-  padding-left: 0.5rem;
-}
-
-.nav-list > :first-child {
+.menu_btn {
+  position: fixed;
+  background: none;
   border: none;
   padding: 0;
+  top: 16px;
+  right: 20px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 1;
 }
 
-a {
+.menu_btn > span,
+.menu_btn > span::before,
+.menu_btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2.5px;
+  background-color: var(--dark);
+  transition-duration: 0.25s;
+  border-radius: 2px;
+}
+
+.menu_btn > span::before {
+  content: '';
+  top: -8px;
+}
+
+.menu_btn > span::after {
+  content: '';
+  top: 8px;
+}
+
+.menu_btn_active > span {
+  transform: rotate(45deg);
+}
+
+.menu_btn_active > span::before {
+  top: 0;
+  transform: rotate(0deg);
+}
+
+.menu_btn_active > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+.menu_box {
+  display: block;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 250px;
+  height: 100%;
+  padding: 80px 0;
+  list-style: none;
+  background-color: #eceff1;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+  transition-duration: 0.25s;
+}
+
+.menu_box_open {
+  right: 0 !important;
+}
+
+.menu_item {
+  display: block;
+  font-weight: 600;
+  font-size: 1.3rem;
   text-decoration: none;
   color: var(--dark);
-  font-size: 1rem;
-  font-weight: 600;
+  padding: 10px 24px;
 }
 
 .active {
-  border-bottom: 1px solid var(--dark);
-  color: red;
+  color: var(--red);
 }
+
+/* Main Container */
 
 main {
   padding: 1rem;
@@ -102,7 +160,7 @@ main {
 
 h1 {
   font-size: 2rem;
-  color: #ff4500;
+  color: var(--red);
   margin: 2rem 0;
 }
 
@@ -115,29 +173,71 @@ h1 {
 }
 
 .quote {
-  font-style: italic;
   font-size: 1rem;
+  padding: 1rem 0.5rem;
 }
+
+.author {
+  font-style: italic;
+  font-weight: 600;
+  color: var(--dark);
+  font-family: sans-serif;
+}
+
+/* Media Queries for Screens > 768px */
 
 @media screen and (min-width: 768px) {
   .navbar {
-    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.2rem;
   }
 
-  h2 {
-    font-size: 1.8rem;
+  .menu_btn {
+    display: none;
   }
 
-  .nav-list {
+  .menu_box {
+    display: flex;
+    width: initial;
+    position: initial;
+    padding: 0;
+    background: none;
+    box-shadow: none;
     gap: 1rem;
   }
 
-  li {
-    padding-left: 1rem;
+  .menu_box li {
+    border-left: 1px solid var(--dark);
   }
 
-  a {
+  .menu_box > :first-child {
+    border: none;
+    padding: 0;
+  }
+
+  .menu_item {
     font-size: 1.2rem;
+    position: relative;
+    padding: 0;
+  }
+
+  .menu_item::after {
+    bottom: -2px;
+    content: "";
+    display: block;
+    height: 1.5px;
+    left: 50%;
+    position: absolute;
+    background: var(--dark);
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+
+  .menu_item:hover::after {
+    width: 100%;
+    left: 0;
   }
 
   main {
@@ -163,6 +263,6 @@ h1 {
 
   .quote {
     font-size: 1.2rem;
-    padding: 2rem;
+    padding: 1rem;
   }
 }
